@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -11,10 +10,10 @@
 
 int main(void)
 {
-	char putchr[] = "_putchar";
+	char str[] = "_putchar";
 
-	for (int c = 0; c < 8; c++)
-		_putchar(putchr[c]);
+	for (int ch = 0; ch < 8; ch++)
+		_putchar(str[ch]);
 	_putchar("\n");
 i
 	return (0);
