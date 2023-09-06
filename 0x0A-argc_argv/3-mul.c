@@ -11,10 +11,10 @@
 
 int main(int argc; char *argv[])
 {
-	int x,y,result;
-	
-	x = (int)argv[1];
-	y = (int)argv[2];
+	int x, y, result;
+
+	x = atoi(argv[1]);
+	y = atoi(argv[2]);
 
 	if (x == NULL || y == NULL || argc > 3)
 	{
