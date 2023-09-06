@@ -1,24 +1,21 @@
 #include "main.h"
 
 /**
- * main - return the muliplication of two numbers
+ * main - multiplies to arguments
  *
- * @argc: the number of arguments
- * @argv: arraay of strings to arugments
+ *@argc: num of arguments
+ *@argv: array of strings
  *
- * Return: the result of the multiplication
+ * Return: success (0)
 */
 
-int main(int argc; char *argv[])
+int main(int argc, char *argv[])
 {
-	int x, y, result;
-
-	x = (int)argv[1];
-	y = (int)argv[2];
+	int result;
 
 	if (argc == 3)
 	{
-		result = x * y;
+		result = (int)argv[1] * (int)argv[2];
 		printf("%d\n", result);
 	}
 	else
