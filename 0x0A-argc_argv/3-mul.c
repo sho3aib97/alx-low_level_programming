@@ -13,16 +13,18 @@ int main(int argc; char *argv[])
 {
 	int x, y, result;
 
-	x = atoi(argv[1]);
-	y = atoi(argv[2]);
+	x = (int)argv[1];
+	y = (int)argv[2];
 
-	if (x == NULL || y == NULL || argc > 3)
+	if (argc == 3)
+	{
+		result = x * y;
+		printf("%d\n", result);
+	}
+	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	result = x * y;
-	printf("%d\n", result);
 	return (0);
 }
