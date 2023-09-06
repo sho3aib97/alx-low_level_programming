@@ -23,6 +23,6 @@ int main(int argc; char *argv[])
 	}
 
 	result = x * y;
-
-	return (result);
+	printf("%d\n", result);
+	return (0);
 }
