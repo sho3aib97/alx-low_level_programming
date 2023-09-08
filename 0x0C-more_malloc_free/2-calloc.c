@@ -30,5 +30,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		if (arr[i] != 0)
 		free(arr);
 	}
-	return (arr);
+	return ((void *)arr);
 }
