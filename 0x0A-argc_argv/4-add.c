@@ -20,12 +20,13 @@ int main(int argc, char *argv[])
 	arr = malloc(sizeof(int) * (argc - 1));
 	
 	m = 0;
+
 	for (n = 1; argv[n] != '\0'; n++)
 	{
 		arr[m] = atoi(argv[n]);
 		m++;
 	}
-	for (n = 0; n < (argc - 1); n++)
+	for (n = 0; n < argc - 1; n++)
 	{
 		if (isdigit(arr[n]) == 0)
 		{
@@ -35,7 +36,9 @@ int main(int argc, char *argv[])
 		}
 	}
 	result = 0;
+
 	for (m = 0; m < (argc - 1); m++)
 		result += arr[m];
+
 	return (result);
 }
