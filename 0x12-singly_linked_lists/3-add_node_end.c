@@ -9,9 +9,11 @@
 unsigned int _strlen(const char *str)
 {
 	unsigned int i = 0;
-
-	while (str[i])
-		i++;
+	if (str)
+	{
+		while (str[i])
+			i++;
+	}
 	return (i);
 }
 
@@ -34,7 +36,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		temp->str = strdup(str);
 		if (!(temp->str))
 		{
-			free(temp->str);
+			free(temp);
 			return (NULL);
 		}
 		temp->len = _strlen(temp->str);
@@ -43,7 +45,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		while (end->next)
 			end = end->next;
-			end->next = temp;
+		end->next = temp;
 	}
 	else
 		*head = temp;
