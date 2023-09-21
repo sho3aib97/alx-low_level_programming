@@ -9,6 +9,7 @@
 unsigned int _strlen(const char *str)
 {
 	unsigned int i = 0;
+
 	if (str)
 	{
 		while (str[i])
