@@ -8,7 +8,7 @@
 
 size_t print_list(const list_t *h)
 {
-	unsigned long  int n = 1;
+	static unsigned int n = 1;
 
 	if (h->str)
 		printf("[%u] %s\n", h->len, h->str);
