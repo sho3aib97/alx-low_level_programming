@@ -1,6 +1,21 @@
 #include "lists.h"
 
 /**
+* _strlen - return length of string
+* @str: string to be calculated
+* Return: length
+*/
+
+unsigned int _strlen(const char *str)
+{
+	unsigned int i = 0;
+
+	while (str[i])
+		i++;
+	return (i);
+}
+
+/**
  * add_node_end - add node to the end of the list
  * @head: pointer to list
  * @str: new string
