@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "lists.h"
 
 /**
  * before_main - execute  before main function
