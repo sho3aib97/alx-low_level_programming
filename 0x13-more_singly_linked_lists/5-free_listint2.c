@@ -11,7 +11,7 @@ void free_listint2(listint_t **head)
 	listint_t *ptr2;
 	listint_t *ptr1 = *head;
 
-	if (!head)
+	if (!head || !*head)
 		return;
 	while (ptr1)
 	{
