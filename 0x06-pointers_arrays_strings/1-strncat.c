@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _strlen - get the length of string
@@ -28,7 +28,6 @@ char *_strncat(char *dest, char *src, int n)
 	int i;
 
 	int s1 = _strlen(dest);
-	int s2 = _strlen(src);
 
 	for (i = s1; i < s1 + n; i++)
 		dest[i] = src[i - s1];
