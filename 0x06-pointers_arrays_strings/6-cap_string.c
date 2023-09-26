@@ -43,7 +43,7 @@ char *cap_string(char *s)
 	{
 		if (_isdelimiter(*s))
 			fDelimiter = 1;
-		else if (_islower(*s) && fDelimiterer)
+		else if (_islower(*s) && fDelimiter)
 		{
 			*s -= 32;
 			fDelimiter = 0;
