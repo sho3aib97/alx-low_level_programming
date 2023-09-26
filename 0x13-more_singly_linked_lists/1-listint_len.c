@@ -8,11 +8,11 @@
 
 size_t listint_len(const listint_t *h)
 {
-	size_t n = 1;
+	size_t i = 1;
 
 	if (!h)
 		return (0);
 	if (h->next)
-		n += list_len(h->next);
-	return (n);
+		i += listint_len(h->next);
+	return (i);
 }
