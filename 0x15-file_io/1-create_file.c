@@ -14,7 +14,7 @@ int _strlen(char *str)
 		return (0);
 	while (*str++)
 		n++;
-	return (i);
+	return (n);
 }
 
 /**
@@ -27,9 +27,8 @@ int _strlen(char *str)
 int create_file(const char *filename, char *text_content)
 {
 	int fil;
-	ssize_t size = 0;
+	ssize_t size = 0, length = _strlen(text_content);
 
-	length = _strlen(text_content);
 	if (!filename)
 		return (-1);
 	fil = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
