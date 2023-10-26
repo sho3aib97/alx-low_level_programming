@@ -1,15 +1,15 @@
-vi #include "main.h"
+#include "main.h"
 
 /**
  * bit_check - check for bit to write
- * @v: integer to compare
- * @h: second integer to compare with
+ * @n: integer to compare
+ * @m: second integer to compare with
  * Return: character
 */
 
-char bit_check(unsigned long int v, unsigned long int h)
+char bit_check(unsigned long int n, unsigned long int m)
 {
-	return ((v & h) ? '1' : '0');
+	return ((n & m) ? '1' : '0');
 }
 
 /**
@@ -41,3 +41,4 @@ void print_binary(unsigned long int n)
 		}
 	}
 }
+
